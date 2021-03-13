@@ -16,7 +16,7 @@ function calculateAge(){
     if (diffDays > 365) {
         document.querySelector('#loading').style.display = "none";  
         document.getElementById('result').style.display = 'block';     
-        const resultYears = (Math.floor(diffDays/365))
+        const resultYears = (Math.floor(diffDays/365));
         const resultDays = Math.floor((diffDays - (Math.floor(diffDays/365)*365)));
         let result = document.getElementById('result');
         result.value = "You are " + resultYears + " years and " + resultDays + " days old";
@@ -30,10 +30,10 @@ function calculateAge(){
     else{
         document.querySelector('#loading').style.display = "none";  
         document.getElementById('result').style.display = 'block';     
-        const resultYears = (Math.floor(diffDays/365))
-        const resultDays = Math.floor((diffDays - (Math.floor(diffDays/365)*365)))
-        let result = document.getElementById('result')
-        result.value = "You are " + resultDays + " days old"
+        const resultYears = (Math.floor(diffDays/365));
+        const resultDays = Math.floor((diffDays - (Math.floor(diffDays/365)*365)));
+        let result = document.getElementById('result');
+        result.value = "You are " + resultDays + " days old";
     }
 
 }
