@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+#result{
+    width: 100%;
+    height: 50px;
+    display: none;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 0 20px 0 #999;
+    height: auto;
+    min-height: 25vh;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#form {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+}
+
+#loading {
+    display:none;
+}
+
+.btn {
+    background-color: #ba281e; /* Green */
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn:focus { outline: none; }
+
+.title {
+    top: 10px;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Playfair Display', serif; 
+}
+
+.data {
+    height: 40px;
+    width: 50%;
+}
