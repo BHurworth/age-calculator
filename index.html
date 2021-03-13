@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="wrapper">
+        <div class="card">
+            <form id="form">
+                <h3 class = "title">Age calculator</h3>
+                <input type="date" class = "date data" placeholder = "Enter your DOB">
+                <input type="submit" value="Calculate" class="btn">
+                <div id="loading">
+                    <img src="Flat hourglass.gif" alt="">
+                </div>
+                <input type="text" class="form-control" id="result" disabled>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
