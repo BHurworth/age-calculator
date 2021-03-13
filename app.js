@@ -17,10 +17,17 @@ function calculateAge(){
         document.querySelector('#loading').style.display = "none";  
         document.getElementById('result').style.display = 'block';     
         const resultYears = (Math.floor(diffDays/365))
-        const resultDays = Math.floor((diffDays - (Math.floor(diffDays/365)*365)))
-        let result = document.getElementById('result')
-        result.value = "You are " + resultYears + " years and " + resultDays + " days old"
-    } else{
+        const resultDays = Math.floor((diffDays - (Math.floor(diffDays/365)*365)));
+        let result = document.getElementById('result');
+        result.value = "You are " + resultYears + " years and " + resultDays + " days old";
+    } 
+    else if (diffDays < 0) {
+        document.querySelector('#loading').style.display = "none";  
+        document.getElementById('result').style.display = 'block'; 
+        let result = document.getElementById('result');
+        result.value = "This is not a valid date";
+    }
+    else{
         document.querySelector('#loading').style.display = "none";  
         document.getElementById('result').style.display = 'block';     
         const resultYears = (Math.floor(diffDays/365))
