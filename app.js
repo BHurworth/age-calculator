@@ -21,8 +21,12 @@ function calculateAge(){
         let result = document.getElementById('result')
         result.value = "You are " + resultYears + " years and " + resultDays + " days old"
     } else{
-        console.log("You are " + diffDays + " old")
-        document.querySelector('#loading').style.display = "none";
+        document.querySelector('#loading').style.display = "none";  
+        document.getElementById('result').style.display = 'block';     
+        const resultYears = (Math.floor(diffDays/365))
+        const resultDays = Math.floor((diffDays - (Math.floor(diffDays/365)*365)))
+        let result = document.getElementById('result')
+        result.value = "You are " + resultDays + " old"
     }
 
 }
