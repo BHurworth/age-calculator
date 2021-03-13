@@ -10,7 +10,7 @@ function calculateAge(){
     const dob = document.querySelector('.date').value;
     const currentDate = new Date();
     const birthDate = new Date(dob);
-    const diffTime = Math.abs(currentDate - birthDate);
+    const diffTime = currentDate - birthDate;
     const diffDays = diffTime / (1000 * 60 * 60 * 24); 
     
     if (diffDays > 365) {
