@@ -26,7 +26,7 @@ function calculateAge(){
         const resultYears = (Math.floor(diffDays/365))
         const resultDays = Math.floor((diffDays - (Math.floor(diffDays/365)*365)))
         let result = document.getElementById('result')
-        result.value = "You are " + resultDays + " old"
+        result.value = "You are " + resultDays + " days old"
     }
 
 }
